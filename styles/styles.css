@@ -1,0 +1,132 @@
+:root {
+    --fuenteHeading: 'Times New Roman', Times, serif;
+    --fuenteNombre: 'Clicker Script', sans-serif;
+    --fuenteParrafos: 'Times New Roman', Times, serif;
+
+    --primario: #504e70;
+    --primarioOscuro: #302e4d;
+    --secundario: #FF5757;
+    --blanco: #fff;
+    --negro: #000;
+}
+
+/*  Globales **/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
+}
+/** Scroll Snap**/
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% );
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+
+/*Menu*/
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: #184463;
+    --bg-menu: #003053;
+    --bg-body: #C7E1FF;
+}
+
+/* GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco);
+}
+
+/* LAYOUT */
+
+.menu-dashboard {
+    max-width: 150px;
+    height: 100vh;
+    background: rosybrown;
+    padding: 20px;
+    transition: max-width .3s ease;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo img {
+    width: 40px;
+}
+
+/* ENLACES MENU */
+
+.menu .enlace {
+    width: 100%;
+    padding: 20px 0 20px 17px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease;
+    margin-top: 2rem;
+}
+
+.menu .enlace:hover {
+    background: var(--secundario);
+}
+
+.menu .enlace i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.menu .enlace span {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
