@@ -30,60 +30,58 @@ html {
 body {
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Times New Roman', Times, serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% );
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
 }
 .contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    margin-top: 5rem;
 }
+
 
 /* Tipografia */
 h1 {
     font-size: 3.8rem;
+    color: var(--primarioOscuro);
 }
+
+h1 span {
+    font-family: var(--fuenteNombre);
+    color: var(--secundario);
+}
+
 h2 {
     font-size: 2.8rem;
+    margin-top: 10rem;
+    color: var(--primarioOscuro);
 }
 h3 {
-    font-size: 1.8rem;
-}
-h1,h2,h3 {
-    text-align: center;
+    font-size: 2rem;
+    color: var(--primarioOscuro);
 }
 
-/*Menu*/
-/* FONTS GOOGLE */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
-/* VARIABLES */
-
-:root {
-    --blanco: #E0E0E0;
-    --azul-opacidad: #184463;
-    --bg-menu: #003053;
-    --bg-body: #C7E1FF;
+h3 span {
+    color: var(--secundario);
 }
 
-/* GENERALES */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    color: var(--blanco);
-}
 
 /* LAYOUT */
 
 .menu-dashboard {
-    max-width: 150px;
-    height: 100vh;
+    width: 250px;
+    height: 100%;
     background: rosybrown;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     transition: max-width .3s ease;
 }
 
@@ -122,11 +120,49 @@ body {
 }
 
 .menu .enlace i {
-    margin-right: 20px;
-    font-size: 25px;
+    margin-right: 2rem;
+    font-size: 2.5rem;
 }
 
 .menu .enlace span {
     opacity: 0;
-    transition: opacity .3s ease;
 }
+
+/* párrafo imagen */
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Espacia el contenido horizontalmente */
+    margin-bottom: 1rem;
+}
+
+.content-wrapper p {
+    max-width: 60%; /* O ajusta según tus necesidades */
+    margin-right: 20px; /* Espacio entre el párrafo y la imagen */
+    font-size: 1.8rem;
+    color: var(--primario);
+}
+
+.content-wrapper img {
+    max-width: 30%; /* O ajusta según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+.sobre-mi p {
+    font-size: 1.8rem;
+    color: var(--primario);
+}
+
