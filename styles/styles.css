@@ -151,7 +151,11 @@ h3 span {
         display: none;
     }
 }
-
+@media (max-width: 900px) {  
+    img {
+        display: none;
+    }
+}
 .content-wrapper p,
 .sobre-mi__parrafo p {
     color: var(--primario);
