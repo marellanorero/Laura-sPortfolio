@@ -254,6 +254,21 @@ h3 span {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .wordpress {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    
+    video{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+video{
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .footer {
@@ -261,13 +276,3 @@ h3 span {
     margin-top: 5rem;
 }
 
-.wordpress {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-}
-
-video{
-    width: 100%;
-    margin-bottom: 2rem;
-}
