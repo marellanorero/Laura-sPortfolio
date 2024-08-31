@@ -260,13 +260,13 @@ h3 span {
         column-gap: 2rem;
     }
     
-    video{
+    iframe{
         width: 100%;
         margin-bottom: 2rem;
     }
 }
 
-video{
+iframe{
     width: 100%;
     margin-bottom: 2rem;
 }
