@@ -5,15 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura's Portfolio</title>
+    <meta name="description" content="portafolio diseñador web">
+
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
+
+    <!--Preload-->
+    <link rel="preload" href="styles/normalize.css" as="style">
     <link rel="stylesheet" href="styles/normalize.css">
+
+    <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:wght@400;700&display=swap"
+    crossorigin="crossorigin"
+    as="font"
+    >
+    <link
+    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="preload" href="styles/styles.css" as="style">
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preload" href="img/perfil-web.gif">
 </head>
 
 <body>
@@ -21,7 +37,7 @@
         <!--Top Menu-->
         <div class="top-menu">
             <div class="logo">
-                <img src="img/logo-minimizado.png" alt="Logo">
+                <img loading="lazy" src="img/logo-minimizado.png" alt="Logo">
             </div>
         </div>
 
@@ -68,7 +84,7 @@
                         </p>
                         <a class="boton" href="#contacto">Contactar</a>
                     </div>
-                    <img src="img/perfil-web.gif" alt="imagen perfil">
+                    <img loading="lazy" src="img/perfil-web.gif" alt="imagen perfil">
                 </div>
             </div> <!--.contenodor-hero-->
         </section>
