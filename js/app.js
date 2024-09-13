@@ -19,3 +19,8 @@ enlacesMenu.forEach(enlace => {
         iconoMenu.classList.replace("bx-menu", "bx-x")
     })
 })
+
+function playVideo1() {
+    document.querySelector('.video-container').style.display = 'none';
+    document.getElementById('youtube-video-1').style.display = 'block';
+}
