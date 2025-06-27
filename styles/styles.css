@@ -3,20 +3,24 @@ h2,
 h3 {
     color: var(--primarioOscuro);
 }
+
 .contacto .contacto__icono,
 h1 span,
 h3 span {
     color: var(--secundario);
 }
+
 .content-wrapper img,
 iframe {
     width: 100%;
 }
+
 .boton,
 .contacto,
 .footer {
     text-align: center;
 }
+
 :root {
     --fuenteHeading: "Times New Roman", Times, serif;
     --fuenteNombre: "Clicker Script", sans-serif;
@@ -27,22 +31,26 @@ iframe {
     --blanco: #fff;
     --negro: #000;
 }
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
 }
+
 .formulario,
 .navegacion-principal,
 .servicios {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+
 *,
 :after,
 :before {
     box-sizing: inherit;
 }
+
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,30 +59,37 @@ body {
     height: 100vh;
     background: #f2f2fc;
 }
+
 .main-container {
     display: flex;
     width: 100%;
 }
+
 .contenedor {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
     margin-top: 5rem;
 }
+
 h1 {
     font-size: 3.8rem;
 }
+
 h1 span {
     font-family: var(--fuenteNombre);
 }
+
 h2 {
     font-size: 2.8rem;
     margin-top: 10rem;
 }
+
 .boton,
 h3 {
     font-size: 2rem;
 }
+
 @media (min-width: 768px) {
     .menu-dashboard {
         width: 100px;
@@ -85,21 +100,26 @@ h3 {
         flex-direction: column;
         transition: max-width 0.3s;
     }
+
     .top-menu,
     .top-menu .logo {
         align-items: center;
         display: flex;
     }
+
     .top-menu {
         justify-content: space-between;
     }
+
     .top-menu .logo img {
         width: 40px;
     }
+
     .menu a {
         text-decoration: none;
         color: var(--primarioOscuro);
     }
+
     .menu .enlace {
         width: 100%;
         padding: 20px 0 20px 17px;
@@ -112,61 +132,76 @@ h3 {
         transition: 0.3s;
         margin-top: 2rem;
     }
+
     .menu .enlace:hover {
         background: var(--secundario);
     }
+
     .menu .enlace i {
         margin-right: 2rem;
         font-size: 2.5rem;
     }
+
     .menu .enlace span {
         opacity: 0;
     }
 
-   /* Estado inicial del menú */
+    /* Estado inicial del menú */
     .menu-dashboard {
-        width: 100px; /* Menú cerrado, solo muestra íconos */
+        width: 100px;
+        /* Menú cerrado, solo muestra íconos */
         height: 100%;
-        background: #bc8f8f; /* Color rosado inicial */
+        background: #bc8f8f;
+        /* Color rosado inicial */
         padding: 20px;
         display: flex;
         flex-direction: column;
-        transition: width 0.3s ease, background 0.3s ease; /* Suaviza la transición de ancho y color */
+        transition: width 0.3s ease, background 0.3s ease;
+        /* Suaviza la transición de ancho y color */
     }
 
-/* Menú expandido al hacer clic */
+    /* Menú expandido al hacer clic */
     .menu-dashboard.open {
-        width: 250px; /* Expansión completa del menú */
-        background: #ff5757; /* Color rosado más intenso o diferente */
+        width: 250px;
+        /* Expansión completa del menú */
+        background: #ff5757;
+        /* Color rosado más intenso o diferente */
     }
 
-/* Enlaces del menú cuando está abierto */
+    /* Enlaces del menú cuando está abierto */
     .menu-dashboard.open .menu .enlace span {
-        opacity: 1; /* Muestra el texto del menú */
+        opacity: 1;
+        /* Muestra el texto del menú */
         transition: opacity 0.3s ease;
-    }    
+    }
+
     .contacto {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media (max-width: 767px) {
+
     .menu,
     .menu-dashboard {
         display: none;
     }
 }
+
 @media (max-width: 900px) {
     img {
         display: none;
     }
 }
+
 .content-wrapper p,
 .sobre-mi__parrafo p {
     color: var(--primario);
     line-height: 2.5rem;
     margin-bottom: 5rem;
 }
+
 .boton {
     display: inline-block;
     background-color: var(--secundario);
@@ -179,6 +214,7 @@ h3 {
     width: 90%;
     border: none;
 }
+
 .fichas .primera-seccion,
 .fichas .segunda-seccion {
     background-color: var(--blanco);
@@ -189,14 +225,17 @@ h3 {
     border-radius: 2rem;
     margin-bottom: 3rem;
 }
+
 .botones a {
     margin-bottom: 1rem;
 }
+
 .contacto__pregunta {
     text-align: center;
     color: var(--secundario);
     margin-bottom: 10rem;
 }
+
 .contacto .contacto__email,
 .contacto .contacto__github,
 .contacto .contacto__linkedin,
@@ -206,23 +245,29 @@ h3 {
     color: var(--primarioOscuro);
     font-weight: 700;
 }
+
 @media (min-width: 1440px) {
+
     .botones,
     .content-wrapper,
     .fichas {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     .fichas {
         column-gap: 2rem;
     }
+
     .botones {
         margin-left: 5rem;
     }
+
     .contacto {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     /* .wordpress {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -233,12 +278,15 @@ h3 {
         margin-bottom: 2rem;
     }
 }
+
 iframe {
     margin-bottom: 2rem;
 }
+
 .footer {
     margin-top: 5rem;
 }
+
 /* .video-container {
     position: relative;
     width: 560px;
@@ -259,23 +307,26 @@ iframe {
     margin: 1rem;
 } */
 
-.video-container {
+.video-container,
+.portfolio-item {
     display: flex;
     align-items: center;
-    gap: 0.75rem; /* Espacio entre el botón y el texto */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    gap: 0.75rem;
+    /* Espacio entre el botón y el texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
     padding: 1rem;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 15px;
-  }
-  
-  .video-container:hover {
+}
+
+.video-container:hover {
     background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .play-button {
+}
+
+.play-button {
     font-size: 1.5rem;
     color: white;
     background-color: #1e1e1e;
@@ -284,12 +335,28 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .video-container p {
+}
+
+.video-container p,
+.portfolio-item {
     margin: 0;
     color: white;
     font-weight: 500;
     font-size: 1rem;
-  }
-  
+}
+
+.portfolio-item {
+    margin: 15px 15px;
+}
+ 
+.project-link {
+    margin: 0;
+    color: #fff;
+    /* blanco o el color que uses */
+    text-decoration: none;
+    display: block;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
